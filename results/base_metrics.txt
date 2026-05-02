@@ -1,2 +1,0 @@
-Average WER: 32.71%
-Average CER: 8.73%
