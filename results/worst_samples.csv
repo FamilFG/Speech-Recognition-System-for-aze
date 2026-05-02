@@ -1,0 +1,6 @@
+reference,prediction,wer,cer
+Həmin dövrdən indiyədək Heydər Əliyev adına Saraya ləyaqətlə rəhbərlik edir.,"Əmin dövrdən indiyana dək, Heydar Ali Vadnassaraya ləyəqətlə rəhbərliyidir.",0.9,0.2236842105263158
+Bir oğul övladı var.,Pirəhol Əvladılar,1.0,0.45
+Cənubi Koreyada.,Cənubi xörə yada,1.0,0.3125
+Hazırda xarabalıqları qalır.,Azərbaycanlı qarabalıqlar qalır,1.0,0.42857142857142855
+Göldə mülayim iqlim şəraiti hökm sürür.,"KÜLDÜM, LÖYUM, İLM ŞƏRATI VƏ KÜMSÜZÜR",1.0,0.48717948717948717

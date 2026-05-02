@@ -1,0 +1,6 @@
+openai-whisper
+jiwer
+pandas
+numpy
+matplotlib
+librosa
