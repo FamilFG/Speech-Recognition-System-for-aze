@@ -3,4 +3,3 @@ jiwer
 pandas
 numpy
 matplotlib
-librosa
