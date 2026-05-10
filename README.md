@@ -12,7 +12,7 @@ Bu layihə **R.I.S.K. Company AI Engineer Intern** tapşırığı çərçivəsin
 
 ## Texnologiyalar və Model
 
-* **Model:** OpenAI Whisper `small`  
+* **Model:** OpenAI Whisper `large`  
 * **Dataset:** Mozilla Common Voice 17.0 (Azərbaycan dili)  
 * **Metrikalar:** Word Error Rate (WER) və Character Error Rate (CER)  
 * **Kitabxanalar:** `openai-whisper`, `jiwer`, `pandas`, `matplotlib`  
