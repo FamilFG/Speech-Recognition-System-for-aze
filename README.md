@@ -1,4 +1,7 @@
 # Azərbaycan Dili üçün Nitq Tanıma Sistemi (ASR)
+<p align="center">
+  <img src="banner.png" alt="Deep Learning Projects Banner" />
+</p>
 
 Bu layihə **R.I.S.K. Company AI Engineer Intern** tapşırığı çərçivəsində hazırlanmışdır. Layihənin məqsədi Mozilla Common Voice datasetindən istifadə edərək Azərbaycan dili üçün Avtomatik Nitq Tanıma (ASR) pipeline-i qurmaq və optimallaşdırmaqdır.
 
