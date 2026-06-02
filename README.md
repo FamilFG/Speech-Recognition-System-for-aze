@@ -1,7 +1,7 @@
 # Speech Recognition System (ASR) for the Azerbaijani Language
 
 <p align="center">
-  <img src="banner.png" alt="Deep Learning Projects Banner" />
+  <img src="banner.png" alt="ASR Banner" />
 </p>
 
 This project was developed as part of the **R.I.S.K. Company AI Engineer Intern** assignment. The goal of the project is to build and optimize an Automatic Speech Recognition (ASR) pipeline for the Azerbaijani language using the Mozilla Common Voice dataset.
