@@ -1,52 +1,53 @@
-# Azərbaycan Dili üçün Nitq Tanıma Sistemi (ASR)
+# Speech Recognition System (ASR) for the Azerbaijani Language
+
 <p align="center">
   <img src="banner.png" alt="Deep Learning Projects Banner" />
 </p>
 
-Bu layihə **R.I.S.K. Company AI Engineer Intern** tapşırığı çərçivəsində hazırlanmışdır. Layihənin məqsədi Mozilla Common Voice datasetindən istifadə edərək Azərbaycan dili üçün Avtomatik Nitq Tanıma (ASR) pipeline-i qurmaq və optimallaşdırmaqdır.
+This project was developed as part of the **R.I.S.K. Company AI Engineer Intern** assignment. The goal of the project is to build and optimize an Automatic Speech Recognition (ASR) pipeline for the Azerbaijani language using the Mozilla Common Voice dataset.
 
-## Layihə Strukturu
+## Project Structure
 
-* **part_a**: ASR baza tətbiqi (baseline). Modelin ilkin vəziyyətdə performansı  
-* **part_b**: Təkmilləşdirilmiş sistem (prompting və mətn təmizləmə / normalization)  
-* **results**: Metrikalar (WER/CER), nəticələr və qrafiklər  
-* **report.pdf**: Analitik hesabat (Hissə C)  
-* **requirements.txt**: Lazım olan kitabxanalar  
+- **part_a**: Baseline ASR implementation. Performance of the model in its initial state.
+- **part_b**: Improved system (prompting and text cleaning/normalization).
+- **results**: Metrics (WER/CER), results, and visualizations.
+- **report.pdf**: Analytical report (Part C).
+- **requirements.txt**: Required libraries and dependencies.
 
-## Texnologiyalar və Model
+## Technologies and Model
 
-* **Model:** OpenAI Whisper `large-v2`  
-* **Dataset:** Mozilla Common Voice 17.0 (Azərbaycan dili)  
-* **Metrikalar:** Word Error Rate (WER) və Character Error Rate (CER)  
-* **Kitabxanalar:** `openai-whisper`, `jiwer`, `pandas`, `matplotlib`  
+- **Model:** OpenAI Whisper `large-v2`
+- **Dataset:** Mozilla Common Voice 17.0 (Azerbaijani)
+- **Metrics:** Word Error Rate (WER) and Character Error Rate (CER)
+- **Libraries:** `openai-whisper`, `jiwer`, `pandas`, `matplotlib`
 
-## Nəticələrin Müqayisəsi
+## Results Comparison
 
-| Metrika          | Part A (Baseline) | Part B (Improved) | Fərq       |
-|------------------|-------------------|-------------------|------------|
-| **Ortalama WER** | 32.71%            | 31.28%            | **-1.43%** |
-| **Ortalama CER** | 8.73%             | 8.31%             | **-0.42%** |
+| Metric | Part A (Baseline) | Part B (Improved) | Difference |
+|----------|------------------|-------------------|------------|
+| **Average WER** | 32.71% | 31.28% | **-1.43%** |
+| **Average CER** | 8.73% | 8.31% | **-0.42%** |
 
-**Part B-də yaxşılaşma inference-time optimizasiya üsulları ilə əldə edilmişdir (initial_prompt və mətn təmizləmə).**
+**The improvement in Part B was achieved through inference-time optimization techniques, including the use of `initial_prompt` and text normalization.**
 
-## Quraşdırma və İşə Salma
+## Installation and Usage
 
-### 1. Kitabxanaları yüklə
+### 1. Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 2. Baza modeli işə sal (Part A)
+### 2. Run the Baseline Model (Part A)
 
-```bash id="az2"
+```bash
 python part_a/run_inference.py
 python part_a/evaluate.py
 ```
 
-### 3. Təkmilləşdirilmiş pipeline-i işə sal (Part B)
+### 3. Run the Improved Pipeline (Part B)
 
-```bash id="az3"
+```bash
 python part_b/train.py
 python part_b/run_ft_inference.py
 python part_b/plot_metrics.py
